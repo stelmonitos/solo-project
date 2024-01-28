@@ -1,7 +1,7 @@
 const app = {
-    init: function() {
+  init: function() {
 
-    },
-}
+  },
+};
 
 app.init();
