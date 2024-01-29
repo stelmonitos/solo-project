@@ -11,28 +11,31 @@ $color-gold: #BEA67C;
 }
 
 .hero__content{
-    padding-top: 17%;
-    letter-spacing: 10px;
-    .hero__title{
-        font-size: 80px;
-        display: block;
-        margin-inline-start: -45px;
-        color: #BEA67C;
-    }
-    .hero__subtitle{
-        font-size: 80px;
-        display: block;
-        color: #BEA67C;
-        margin-top: 0;
-        margin-inline-start: 100px;
-    }
-    .line{
-        position: relative;
-        font-size: 80px;
-        letter-spacing: -5px;
-        color: #BEA67C;
-        margin-top: -105px;
-        left: 290px;
-        align-items: center;
-    }
+  padding-top: 17%;
+  letter-spacing: 10px;
+
+  .hero__title{
+    font-size: 80px;
+    display: block;
+    margin-inline-start: -45px;
+    color: #BEA67C;
+  }
+
+  .hero__subtitle{
+    font-size: 80px;
+    display: block;
+    color: #BEA67C;
+    margin-top: 0;
+    margin-inline-start: 100px;
+  }
+
+  .line{
+    position: relative;
+    font-size: 80px;
+    letter-spacing: -5px;
+    color: #BEA67C;
+    margin-top: -105px;
+    left: 290px;
+    align-items: center;
+  }
 }

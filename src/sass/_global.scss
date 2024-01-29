@@ -23,10 +23,24 @@ h4{
 
 .hero {
   color: #fff;
-  background-color: darken($color-black, 20%); // darken the background color by 20%
   background-image: url('../images/background.png');
   background-size: cover;
   padding-bottom: 600px;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+}
+
+.hero-text{
+  position: relative;
+  z-index: 2;
 }
 
 .container{
