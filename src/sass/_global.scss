@@ -10,21 +10,23 @@ $color-gold: #BEA67C;
 
 // Global fonts
 $font-main: 'Source Sans 3', sans-serif;
+
 h1{
   margin-bottom: 0;
 }
+
 h4{
   margin-top: 0;
   position: relative;
   left: 2px;
 }
 
-.hero{
-  color:#fff;
-  background-color: $color-black;
+.hero {
+  color: #fff;
+  background-color: darken($color-black, 20%); // darken the background color by 20%
   background-image: url('../images/background.png');
   background-size: cover;
-  padding-bottom: 600px;;
+  padding-bottom: 600px;
 }
 
 .container{
@@ -44,6 +46,7 @@ a{
   text-decoration: none;
   color: whitesmoke;
   margin: 0 10px;
+
   &:hover{
     color: $color-gold;
   }
