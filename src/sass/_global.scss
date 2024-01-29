@@ -9,13 +9,7 @@ $color-white: #fff;
 $color-gold: #BEA67C;
 
 // Global fonts
-$fonts: (
-  regular: 'Arial',
-  bold: 'Arial Bold',
-  italic: 'Arial Italic',
-  bold-italic: 'Arial Bold Italic',
-  underline: 'Arial Underline'
-);
+$font-main: 'Source Sans 3', sans-serif;
 
 body {
   padding: 30px auto;
