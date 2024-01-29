@@ -12,7 +12,6 @@ $color-gold: #BEA67C;
 $font-main: 'Source Sans 3', sans-serif;
 
 body {
-  padding: 30px auto;
   margin: 0;
   font-family: 'Source Sans 3', sans-serif;
 
@@ -20,5 +19,15 @@ body {
 
 .container {
   max-width: 100%;
-  margin: 0 350px;
+  margin: 50px 300px;
+}
+
+h1{
+  margin-bottom: 0;
+}
+h4{
+  margin-top: 0;
+}
+li{
+  list-style: none;
 }
