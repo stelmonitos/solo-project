@@ -1,60 +1,93 @@
 
 .header{
-    width: 100%;
-    display: grid;    
+  width: 100%;
+  display: grid;   
+  z-index: 10; 
 }
+
 nav{
-    display: grid;
-    color: white;
-    position: fixed;
-    z-index: 10;
-    width: 100%;
+  display: grid;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
 }
+
 .brand{
-    display: grid;
-    display: inline;
-    font-family: $font-main;
-    &__title{
-        letter-spacing: 10px;
-    }
-    &__subtitle{
-        letter-spacing: 3px;
-        position: relative;
-        left: 3px;
-    }
+  display: grid;
+  display: inline;
+  font-family: 'Source Sans 3', sans-serif;
+  color: white;
+
+  &__title{
+    letter-spacing: 10px;
+  }
+
+  &__subtitle{
+    letter-spacing: 3px;
+    position: relative;
+    left: 3px;
+    font-weight: 600;
+  }
 
 }
+
+.splash-text{
+    display: grid;
+    z-index: 10;
+    color: $color-gold;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 900;
+    font-size: 80px;
+    margin: 100px;
+    margin-left: 20%;
+    p{
+        margin: 0 0 0 135px;
+    }
+}
+
 .splash{
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: fixed;
+    z-index: -1;
+  }
+}
+
+.main-nav{
+    
+  padding: 0 0 0 202px;
+  display: inline-block;
+
+  a{
+    text-decoration: none;
+    margin-right: 10px;
+    padding-right: 10px;
+    font-family: 'Source Sans 3', sans-serif;
+    color: rgba(245, 245, 245, 0.63);
+  }
+}
+.splash{
+    position: absolute;
     img {
         width: 100%;
         height: auto;
         display: block;
         position: fixed;
+        z-index: -1;
+        background-size: cover;
     }
 }
-
-.main-nav{
-    
-    padding: 0 0 0 259px;
-    display: inline-block;
-    a{
-        text-decoration: none;
-        margin-right: 10px;
-        padding-right: 10px;
-        font-family: $font-main;
-        color: white;
+.dark-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.6); /* Black with 50% opacity */
+        z-index: -1;
     }
-}
-// .dark-overlay {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-//   background: rgba(0, 0, 0, 0.6); /* Black with 50% opacity */
-//   z-index: 1;
-// }
-
 .row{
-    align-items: center;
+  align-items: center;
 }
