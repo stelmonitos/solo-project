@@ -2,6 +2,8 @@ $color-black: #000;
 $color-white: #fff;
 $color-gold: #BEA67C;
 
+$font-main: 'Source Sans 3', sans-serif;
+
 .main-nav{
   display: grid;
   grid-template-columns: auto auto auto;
@@ -41,12 +43,31 @@ $color-gold: #BEA67C;
 }
 
 .logo{
-    &__title{
-        letter-spacing: 5px;
-    }
-    &__subtitle{
-        letter-spacing: 5px;
-        font-weight: 600;
-    }
+  &__title{
+    letter-spacing: 5px;
+  }
+
+  &__subtitle{
+    letter-spacing: 5px;
+    font-weight: 600;
+  }
   
+}
+.discover{
+  display: grid;
+  justify-items: center;
+  margin: 245px -15px 0px -75px;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: lighter;
+  letter-spacing: 5px;
+  .icon-arrow{
+    font-size: 40px;
+    margin-left: 10px;
+    margin-top: -20px;
+  }
+  span{
+    position: relative;
+    left: 8px;
+  }
 }

@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 
-
 // Global colors
 $color-black: #000;
 $color-white: #fff;
@@ -10,6 +9,10 @@ $color-gold: #BEA67C;
 
 // Global fonts
 $font-main: 'Source Sans 3', sans-serif;
+
+.splash{
+  height: 100vh;
+}
 
 h1{
   margin-bottom: 0;
@@ -25,7 +28,8 @@ h6{
   color: white;
   background-image: url('../images/background.png');
   background-size: cover;
-  padding-bottom: 600px;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
 .hero::after {
