@@ -1,5 +1,6 @@
 import {select ,templates } from '../settings.js';
 import { utils } from '../utils.js';
+
 class Product {
   constructor(id, data){
     this.id = id;
@@ -22,5 +23,4 @@ class Product {
     this.productPage.appendChild(this.element);
   }
 }
-
 export default Product;

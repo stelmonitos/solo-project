@@ -6,6 +6,18 @@ export const select = {
     pages: '#pages',
     productList: '.product-list',
   },
+  nav:{
+    links: '.nav-link',
+  },
+};
+
+export const classNames = {
+  nav:{
+    active: 'active',
+  },
+  pages:{
+    active: 'active',
+  },
 };
 
 export const settings = {
@@ -17,4 +29,5 @@ export const settings = {
 
 export const templates = { 
   product: Handlebars.compile(document.querySelector(select.templateOf.product).innerHTML),
+  
 };
