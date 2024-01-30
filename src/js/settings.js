@@ -6,7 +6,7 @@ export const select = {
     pages: '#pages',
     productList: '.product-list',
   },
-}
+};
 
 export const settings = {
   db: {
@@ -17,4 +17,4 @@ export const settings = {
 
 export const templates = { 
   product: Handlebars.compile(document.querySelector(select.templateOf.product).innerHTML),
-}
+};

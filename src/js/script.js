@@ -4,15 +4,16 @@ import Product from './components/products.js';
 const app = {
 
   initData: function(){
-    this.data = {};
-
+    
     const url = settings.db.url + '/' + settings.db.products;
     
+    this.data = {};
+    
     fetch(url)
-      .then(function(rawResponse){
+      .then((rawResponse) =>{
         return rawResponse.json();
       })
-      .then(function(parsedResponse){
+      .then((parsedResponse) =>{
         this.data.products = parsedResponse;
         this.initProducts();
       });
@@ -28,7 +29,6 @@ const app = {
 
   init: function() {
     this.initData();
-    this.initProducts();
   },
 };
 
