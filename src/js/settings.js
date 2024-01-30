@@ -1,6 +1,7 @@
 export const select = {
   templateOf: {
     product: '#template-product',
+    smthPush: '#template-smth-to-push',
   },
   containerOf: {
     pages: '#pages',
