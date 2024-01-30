@@ -25,9 +25,9 @@
                             <h6 class="logo__subtitle">VENEZUELA COFFEE BEANS</h6>
                         </div>
                         <div class="main-nav col-md-6">
-                            <a href="#home">HOME</a>
-                            <a href="#products">PRODUCTS</a>
-                            <a href="#booking">CONTACT</a>
+                            <a class="nav-links" href="#home">HOME</a>
+                            <a class="nav-links" href="#products">PRODUCTS</a>
+                            <a class="nav-links" href="#booking">CONTACT</a>
                         </div>
                         <div class="hero__content col-md-12">
                             <h1 class="hero__title">HOME OF</h1>
@@ -45,8 +45,14 @@
     </section>
 
     <div class="pages">
-        <section id="home">
-            <div class="home-wrapper container"></div>
+        <section id="home" class="home-page page container">
+            <div class="home-wrapper">
+            <h1 class="section-title">PRODUCTS</h1><br>
+            <div class="line">_____________________</div>
+
+            <div id="product-list" class="product-list"></div>
+
+            </div>
         </section>
         <section id="products">
             <div class="product-list container"></div>
@@ -56,14 +62,31 @@
         </section>
     </div>
 
-
-    <section class="products">
-        <div class="container">
-        </div>
-    </section>
-    <section class="about-us">
-
-    </section>
+    <script id="template-product" type="text/x-handlebars-template">
+        <article class="article-products">
+            <div class="row">
+            <div class="col-md-6 col-sm-12 column">
+                <div class="text-products">
+                    <h1 class="title-products">{{ id }} {{ name }}</h1>
+                    <div class="product-description">
+                        <p>{{ description }}</p>
+                    </div>
+                    <ul class="prod-value">
+                        <li>ROASTING: <span>{{ roasting }}</span></li>
+                        <li>INTENSITY:<span>{{ intensity }}</span></li>
+                    </ul>
+                    <div class="most-popular">
+                        {{{most-popular}}}
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 column">
+                <div class="product-img">
+                    {{{ img }}}
+                </div>
+            </div>
+        </article>
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <script src="js/script.js" type="module"></script>
 </body>

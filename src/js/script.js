@@ -1,4 +1,5 @@
 import {settings} from './settings.js';
+import Product from './components/products.js';
 
 const app = {
 
@@ -12,13 +13,22 @@ const app = {
         return rawResponse.json();
       })
       .then(function(parsedResponse){
-        console.log('parsedResponse', parsedResponse);
+        this.data.products = parsedResponse;
+        this.initProducts();
       });
+  },
+
+  initProducts: function(){
+    for(let productData in this.data.products){
+      new Product(this.data.products[productData].id,
+        this.data.products[productData]);
+    }
   },
 
 
   init: function() {
     this.initData();
+    this.initProducts();
   },
 };
 

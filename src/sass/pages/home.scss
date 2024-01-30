@@ -57,7 +57,7 @@ $font-main: 'Source Sans 3', sans-serif;
 .discover{
   display: grid;
   justify-items: center;
-  margin: 245px -15px 0px -75px;
+  margin: 245px 0 0 0;
   justify-content: center;
   font-size: 30px;
   font-weight: lighter;
@@ -73,4 +73,27 @@ $font-main: 'Source Sans 3', sans-serif;
     position: relative;
     left: 8px;
   }
+}
+.pages{
+  display: grid;
+  
+  .line{
+    font-size: 80px;
+    letter-spacing: -5px;
+    color: #BEA67C;
+    margin-top: -80px;
+    left: 90px;
+    align-items: center;
+    
+  }
+}
+.section-title{
+  display: grid;
+  justify-content: center;
+  color: $color-gold;
+  font-size: 70px;
+ 
+}
+.home-page{
+  height: 100vh;
 }
