@@ -31,6 +31,10 @@ h6{
   height: 100vh;
   box-sizing: border-box;
 }
+section{
+  box-sizing: border-box;
+  height: 100vh;
+}
 
 .hero::after {
   content: "";
@@ -68,4 +72,9 @@ a{
   &:hover{
     color: $color-gold;
   }
+}
+
+// edits for now
+.about-us{
+  background-color: $color-gold;
 }

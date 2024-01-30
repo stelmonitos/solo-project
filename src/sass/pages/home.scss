@@ -53,6 +53,7 @@ $font-main: 'Source Sans 3', sans-serif;
   }
   
 }
+
 .discover{
   display: grid;
   justify-items: center;
@@ -61,11 +62,13 @@ $font-main: 'Source Sans 3', sans-serif;
   font-size: 30px;
   font-weight: lighter;
   letter-spacing: 5px;
+
   .icon-arrow{
     font-size: 40px;
     margin-left: 10px;
     margin-top: -20px;
   }
+
   span{
     position: relative;
     left: 8px;
