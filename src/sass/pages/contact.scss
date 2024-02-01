@@ -1,45 +1,54 @@
+$color-gold: #BEA67C;
+
 .contact-text{
-    letter-spacing: 10px;
-    font-weight: 600;
+  letter-spacing: 10px;
+  font-weight: 600;
 }
+
 .formulage{
-    height: 100vh;
-    display: grid;
-    p{
-        text-align: center;
-        font-weight: bold;
-        font-size: 25px;
-    }
-    input{
-        border: black 3px solid;
-        height: 50px;
-        width: 100%;
-    }
-    textarea{
-        border: black 3px solid;
-    }
+  height: 100vh;
+  display: grid;
+
+  p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  input{
+    border: black 3px solid;
+    height: 50px;
+    width: 100%;
+  }
+
+  textarea{
+    border: black 3px solid;
+  }
 }
+
 form{
-    display: grid;
-    margin-top: 25px;
-    justify-items: center;
+  display: grid;
+  margin-top: 25px;
+  justify-items: center;
 
 }
+
 .btn{
-    margin-top: 30px;
-    letter-spacing: 3px;
-    padding: 10px 30px;
-    color: white;
-    background-color: $color-gold;
-    width: 50%;
-    align-self: center;
-    border: none;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    &:hover{
-        background-color: white;
-        color: $color-gold;
-        border: black 3px solid;
-    }
+  margin-top: 30px;
+  letter-spacing: 3px;
+  padding: 10px 30px;
+  color: white;
+  background-color: $color-gold;
+  width: 50%;
+  align-self: center;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover{
+    background-color: white;
+    color: $color-gold;
+    border: black 3px solid;
+  }
 }
