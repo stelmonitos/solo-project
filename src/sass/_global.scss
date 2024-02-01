@@ -89,6 +89,7 @@ a{
 #pages{
   .page{
     display: none;
+
     &.active{
       display: block;
     }
