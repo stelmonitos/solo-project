@@ -85,3 +85,12 @@ a{
 .about-us{
   background-color: $color-gold;
 }
+
+#pages{
+  .page{
+    display: none;
+    &.active{
+      display: block;
+    }
+  }
+}

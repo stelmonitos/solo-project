@@ -7,7 +7,7 @@ export const select = {
     productList: '.product-list',
   },
   nav:{
-    links: '.nav-link',
+    links: 'a.nav-link',
   },
 };
 

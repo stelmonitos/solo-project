@@ -27,7 +27,7 @@
                         <div class="main-nav col-md-6">
                             <a class="nav-link" href="#home">HOME</a>
                             <a class="nav-link" href="#products">PRODUCTS</a>
-                            <a class="nav-link" href="#booking">CONTACT</a>
+                            <a class="nav-link" href="#contact">CONTACT</a>
                         </div>
                         <div class="hero__content col-md-12">
                             <h1 class="hero__title">HOME OF</h1>
@@ -44,29 +44,31 @@
         </div>
     </section>
 
-    <div class="pages">
+    <div id="pages">
         <section id="home" class="home-page page container">
             <div class="home-wrapper">
-            <h1 class="section-title">PRODUCTS</h1><br>
-            <div class="line">_____________________</div>
+                <h1 class="section-title">PRODUCTS</h1><br>
+                <div class="line">_____________________</div>
+                <div id="product-list" class="product-list"></div>
+                <div class="about-us">
+                    <div class="contact container">
 
-            <div id="product-list" class="product-list"></div>
-
-            </div> 
+                    </div>
+                </div>
+                
+            </div>
         </section>
-        <section id="products">
+        <section id="products" class="page">
             <div class="product-list container"></div>
         </section>
-        <section class="about-us">
-                    <div class="hero-about">
-                        <div class="container">
+        <section id="contact" class="contact page">
+            <div class="conatct-conatiner">
+                <div class="container">
 
-                        </div>
-                    </div>
-            </section>
-        <section id="contact" class="page">
-            <div class="contact container"></div>
+                </div>
+            </div>
         </section>
+        
     </div>
 
     <script id="template-product" type="text/x-handlebars-template">

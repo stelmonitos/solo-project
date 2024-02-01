@@ -15,10 +15,10 @@ class Product {
     this.element = utils.createDOMFromHTML(generatedHTML);
 
     this.listProduct = document.querySelectorAll(select.containerOf.productList);
-
+    console.log(this.listProduct);
     this.homePage = this.listProduct[0];
     this.productPage = this.listProduct[1];
-
+    
     this.homePage.appendChild(this.element);
     this.productPage.appendChild(this.element);
   }

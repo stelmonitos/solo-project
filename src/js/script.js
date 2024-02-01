@@ -37,8 +37,9 @@ const app = {
   },
 
   activePage: function(pageId){
-
+    console.log('pageId', pageId);
     for(let page of this.pages){
+      console.log('page',page)
       page.classList.toggle(classNames.pages.active, page.id == pageId);
     }
     
@@ -76,7 +77,7 @@ const app = {
 
   init: function() {
     this.initData();
-    // this.initPages();
+    this.initPages();
   },
 };
 
