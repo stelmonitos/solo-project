@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -10,33 +12,31 @@ $color-gold: #BEA67C;
 // Global fonts
 $font-main: 'Source Sans 3', sans-serif;
 
-.splash{
+.splash {
   height: 100vh;
 }
 
-h1{
+h1 {
   margin-bottom: 0;
 }
 
-h6{
+h6 {
   margin-top: 0;
   position: relative;
   left: 3px;
 }
 
-
-
-.products{
+.products {
   box-sizing: border-box;
   height: 100vh;
 }
 
-.hero-text{
+.hero-text {
   position: relative;
   z-index: 2;
 }
 
-.container{
+.container {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
@@ -44,26 +44,26 @@ h6{
   padding-right: 1rem;
 }
 
-body{
+body {
   margin: 0;
   font-family: $font-main;
 }
 
-a{
+a {
   text-decoration: none;
   color: whitesmoke;
   margin: 0 10px;
 
-  &:hover{
+  &:hover {
     color: $color-gold;
   }
 }
 
-#pages{
-  .page{
+#pages {
+  .page {
     display: none;
 
-    &.active{
+    &.active {
       display: block;
     }
   }
